@@ -1,0 +1,336 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Programs & Classes - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gradient-hero text-fc-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">Programs & <span class="text-fc-accent">Classes</span></h1>
+            <p class="text-xl md:text-2xl text-fc-white/90 max-w-3xl mx-auto leading-relaxed">
+                From beginners to elite competitors, we offer a comprehensive range of programs to help you achieve your fencing goals.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Program Tabs -->
+<section class="py-20 bg-fc-surface">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Tab Navigation -->
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <button class="program-tab active btn-primary px-8 py-3 rounded-lg font-semibold" data-tab="group">
+                Group Classes
+            </button>
+            <button class="program-tab btn-secondary px-8 py-3 rounded-lg font-semibold" data-tab="private">
+                Private Lessons
+            </button>
+            <button class="program-tab btn-secondary px-8 py-3 rounded-lg font-semibold" data-tab="camps">
+                Camps & Clinics
+            </button>
+            <button class="program-tab btn-secondary px-8 py-3 rounded-lg font-semibold" data-tab="outreach">
+                Outreach Programs
+            </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Group Classes -->
+            <div class="program-panel active" id="group">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Beginner -->
+                    <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Beginner Class" class="w-full h-64 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Beginner Class</h3>
+                            <p class="text-fc-text mb-6 leading-relaxed">Perfect for those new to fencing. Learn basic techniques, footwork, and rules.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i data-lucide="clock" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Mon/Wed/Fri, 6:00 PM</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="users" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Max 12 students</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="target" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Ages 8+</span>
+                                </li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn-primary block text-center px-6 py-3 rounded-lg font-semibold">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Intermediate Class" class="w-full h-64 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Intermediate Class</h3>
+                            <p class="text-fc-text mb-6 leading-relaxed">Build on fundamentals and develop advanced techniques and strategies.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i data-lucide="clock" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Tue/Thu, 7:00 PM</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="users" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Max 10 students</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="target" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Ages 12+</span>
+                                </li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn-primary block text-center px-6 py-3 rounded-lg font-semibold">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Advanced -->
+                    <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Advanced Class" class="w-full h-64 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Advanced Class</h3>
+                            <p class="text-fc-text mb-6 leading-relaxed">Elite training for competitive fencers. Focus on high-level tactics and conditioning.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i data-lucide="clock" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Mon-Fri, 5:00 PM</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="users" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Max 8 students</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="target" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                    <span class="text-fc-text">Ages 14+</span>
+                                </li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn-primary block text-center px-6 py-3 rounded-lg font-semibold">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Private Lessons -->
+            <div class="program-panel hidden" id="private">
+                <div class="bg-fc-white rounded-2xl p-10 shadow-xl">
+                    <h2 class="text-4xl font-poppins font-bold mb-6 text-fc-primary">Private Lessons</h2>
+                    <p class="text-xl text-fc-text mb-8 leading-relaxed">
+                        One-on-one instruction with our expert coaches. Perfect for focused skill development and personalized feedback.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-poppins font-bold mb-6 text-fc-primary">Lesson Options</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-center">
+                                    <i data-lucide="check" class="w-6 h-6 text-green-500 mr-4"></i>
+                                    <span class="text-lg text-fc-text">30-minute lesson: $50</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="check" class="w-6 h-6 text-green-500 mr-4"></i>
+                                    <span class="text-lg text-fc-text">60-minute lesson: $90</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="check" class="w-6 h-6 text-green-500 mr-4"></i>
+                                    <span class="text-lg text-fc-text">Package of 10 lessons: 10% discount</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-poppins font-bold mb-6 text-fc-primary">Available Coaches</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-center">
+                                    <i data-lucide="user" class="w-6 h-6 text-fc-accent mr-4"></i>
+                                    <span class="text-lg text-fc-text">Coach Smith - Foil Specialist</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="user" class="w-6 h-6 text-fc-accent mr-4"></i>
+                                    <span class="text-lg text-fc-text">Coach Johnson - Epee Specialist</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="user" class="w-6 h-6 text-fc-accent mr-4"></i>
+                                    <span class="text-lg text-fc-text">Coach Williams - Sabre Specialist</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a href="{% url 'contact' %}" class="btn-primary px-8 py-4 rounded-lg font-semibold text-lg">
+                            Book a Lesson
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Camps & Clinics -->
+            <div class="program-panel hidden" id="camps">
+                <!-- Featured Camp -->
+                <div class="bg-gradient-to-br from-fc-primary to-fc-secondary text-fc-white rounded-2xl p-10 mb-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 class="text-4xl font-poppins font-bold mb-6">Summer Intensive Camp</h2>
+                            <p class="text-xl text-fc-white/90 mb-8 leading-relaxed">
+                                Join us for a week of intensive training with Olympic-level coaches. Perfect for competitive fencers looking to elevate their game.
+                            </p>
+                            <ul class="space-y-4 mb-10">
+                                <li class="flex items-center">
+                                    <i data-lucide="calendar" class="w-6 h-6 text-fc-accent mr-4"></i>
+                                    <span class="text-lg">July 15-19, 2025</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="clock" class="w-6 h-6 text-fc-accent mr-4"></i>
+                                    <span class="text-lg">9:00 AM - 4:00 PM daily</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i data-lucide="users" class="w-6 h-6 text-fc-accent mr-4"></i>
+                                    <span class="text-lg">Limited to 20 participants</span>
+                                </li>
+                            </ul>
+                            <a href="{% url 'contact' %}" class="btn-primary px-8 py-4 rounded-lg font-semibold text-lg">
+                                Register Now
+                            </a>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Summer Camp" class="rounded-2xl shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Camps -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-fc-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Youth Development Camp</h3>
+                        <p class="text-fc-text mb-6">Specialized training for young fencers ages 8-14.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i data-lucide="calendar" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                <span class="text-fc-text">June 10-14, 2025</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="dollar-sign" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                <span class="text-fc-text">$299/week</span>
+                            </li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="btn-secondary px-6 py-3 rounded-lg font-semibold">Learn More</a>
+                    </div>
+
+                    <div class="bg-fc-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Competition Prep Clinic</h3>
+                        <p class="text-fc-text mb-6">Intensive weekend workshop for competitive preparation.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i data-lucide="calendar" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                <span class="text-fc-text">Monthly weekends</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="dollar-sign" class="w-5 h-5 text-fc-accent mr-3"></i>
+                                <span class="text-fc-text">$125/weekend</span>
+                            </li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="btn-secondary px-6 py-3 rounded-lg font-semibold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outreach Programs -->
+            <div class="program-panel hidden" id="outreach">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-fc-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">School Programs</h3>
+                        <p class="text-fc-text mb-6">Bringing fencing to local schools and communities.</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span class="text-fc-text">After-school programs</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span class="text-fc-text">PE curriculum integration</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span class="text-fc-text">Equipment provided</span>
+                            </li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="btn-secondary px-6 py-3 rounded-lg font-semibold">Contact Us</a>
+                    </div>
+
+                    <div class="bg-fc-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Veterans Program</h3>
+                        <p class="text-fc-text mb-6">Special programs for military veterans and their families.</p>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span class="text-fc-text">Discounted membership</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span class="text-fc-text">Adaptive training</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span class="text-fc-text">Community support</span>
+                            </li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="btn-secondary px-6 py-3 rounded-lg font-semibold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-fc-accent to-yellow-400">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Ready to Start Your Training?</h2>
+        <p class="text-xl md:text-2xl text-fc-primary/80 mb-12 max-w-3xl mx-auto">Choose from our diverse range of programs and begin your fencing journey today.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="{% url 'membership' %}" class="bg-fc-primary text-fc-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-secondary transition duration-300">
+                Join Now
+            </a>
+            <a href="{% url 'contact' %}" class="border-2 border-fc-primary text-fc-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-primary hover:text-fc-white transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Tab functionality
+    document.querySelectorAll('.program-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remove active class from all tabs and panels
+            document.querySelectorAll('.program-tab').forEach(t => {
+                t.classList.remove('active');
+                t.classList.remove('btn-primary');
+                t.classList.add('btn-secondary');
+            });
+            document.querySelectorAll('.program-panel').forEach(panel => {
+                panel.classList.add('hidden');
+                panel.classList.remove('active');
+            });
+            
+            // Add active class to clicked tab and corresponding panel
+            this.classList.add('active');
+            this.classList.add('btn-primary');
+            this.classList.remove('btn-secondary');
+            document.getElementById(targetTab).classList.remove('hidden');
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
+</script>
+{% endblock %} 

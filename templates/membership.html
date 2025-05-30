@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+
+{% block title %}Membership - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gradient-hero text-fc-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">Join Our <span class="text-fc-accent">Community</span></h1>
+            <p class="text-xl md:text-2xl text-fc-white/90 max-w-3xl mx-auto leading-relaxed">
+                Choose the membership plan that best fits your fencing goals and start your journey with Olympic-level training today.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Cards -->
+<section class="py-20 bg-fc-surface">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Membership Plans</h2>
+            <p class="text-xl text-fc-text">Flexible options for every fencer</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Drop-In -->
+            <div class="bg-fc-white rounded-2xl p-8 hover:shadow-2xl transition duration-500">
+                <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Drop-In</h3>
+                <div class="text-5xl font-poppins font-bold mb-6 text-fc-primary">
+                    $25<span class="text-lg text-fc-text">/class</span>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Single class access</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Equipment rental</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Basic instruction</span>
+                    </li>
+                </ul>
+                <a href="#signup" class="btn-secondary block text-center px-6 py-3 rounded-lg font-semibold">
+                    Try a Class
+                </a>
+            </div>
+
+            <!-- Junior -->
+            <div class="bg-fc-white rounded-2xl p-8 hover:shadow-2xl transition duration-500">
+                <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Junior</h3>
+                <div class="text-5xl font-poppins font-bold mb-6 text-fc-primary">
+                    $100<span class="text-lg text-fc-text">/month</span>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Unlimited youth classes</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Youth program access</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Equipment storage</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Parent viewing area</span>
+                    </li>
+                </ul>
+                <a href="#signup" class="btn-secondary block text-center px-6 py-3 rounded-lg font-semibold">
+                    Select Plan
+                </a>
+            </div>
+
+            <!-- Monthly -->
+            <div class="bg-fc-white rounded-2xl p-8 hover:shadow-2xl transition duration-500">
+                <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Monthly</h3>
+                <div class="text-5xl font-poppins font-bold mb-6 text-fc-primary">
+                    $150<span class="text-lg text-fc-text">/month</span>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Unlimited group classes</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Open bouting access</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Equipment storage</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                        <span class="text-fc-text">Priority booking</span>
+                    </li>
+                </ul>
+                <a href="#signup" class="btn-secondary block text-center px-6 py-3 rounded-lg font-semibold">
+                    Select Plan
+                </a>
+            </div>
+
+            <!-- Annual -->
+            <div class="bg-gradient-to-br from-fc-primary to-fc-secondary text-fc-white rounded-2xl p-8 hover:shadow-2xl transition duration-500 relative transform hover:-translate-y-2">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-fc-accent text-fc-primary px-6 py-2 rounded-full text-sm font-bold">
+                    Best Value
+                </div>
+                <h3 class="text-2xl font-poppins font-bold mb-4">Annual</h3>
+                <div class="text-5xl font-poppins font-bold mb-6">
+                    $1,500<span class="text-lg text-fc-white/80">/year</span>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-fc-accent mr-3"></i>
+                        <span class="text-fc-white">All Monthly benefits</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-fc-accent mr-3"></i>
+                        <span class="text-fc-white">2 free private lessons</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-fc-accent mr-3"></i>
+                        <span class="text-fc-white">Priority registration</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-fc-accent mr-3"></i>
+                        <span class="text-fc-white">Member-only events</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="check" class="w-5 h-5 text-fc-accent mr-3"></i>
+                        <span class="text-fc-white">10% gear discount</span>
+                    </li>
+                </ul>
+                <a href="#signup" class="btn-primary block text-center px-6 py-3 rounded-lg font-semibold">
+                    Select Plan
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Comparison -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Plan Comparison</h2>
+            <p class="text-xl text-fc-text">Compare features across all membership options</p>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full bg-fc-surface rounded-2xl overflow-hidden">
+                <thead>
+                    <tr class="bg-fc-primary text-fc-white">
+                        <th class="text-left py-6 px-8 font-poppins font-bold">Feature</th>
+                        <th class="text-center py-6 px-8 font-poppins font-bold">Drop-In</th>
+                        <th class="text-center py-6 px-8 font-poppins font-bold">Junior</th>
+                        <th class="text-center py-6 px-8 font-poppins font-bold">Monthly</th>
+                        <th class="text-center py-6 px-8 font-poppins font-bold bg-fc-accent text-fc-primary">Annual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-fc-white">
+                        <td class="py-6 px-8 font-medium text-fc-primary">Group Classes</td>
+                        <td class="text-center py-6 px-8 text-fc-text">Per Class</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">Unlimited</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">Unlimited</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">Unlimited</td>
+                    </tr>
+                    <tr class="border-b border-fc-white">
+                        <td class="py-6 px-8 font-medium text-fc-primary">Private Lessons</td>
+                        <td class="text-center py-6 px-8 text-fc-text">Additional Cost</td>
+                        <td class="text-center py-6 px-8 text-fc-text">Additional Cost</td>
+                        <td class="text-center py-6 px-8 text-fc-text">Additional Cost</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">2 Free/Year</td>
+                    </tr>
+                    <tr class="border-b border-fc-white">
+                        <td class="py-6 px-8 font-medium text-fc-primary">Open Bouting</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                    </tr>
+                    <tr class="border-b border-fc-white">
+                        <td class="py-6 px-8 font-medium text-fc-primary">Equipment Storage</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                    </tr>
+                    <tr class="border-b border-fc-white">
+                        <td class="py-6 px-8 font-medium text-fc-primary">Priority Registration</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                    </tr>
+                    <tr class="border-b border-fc-white">
+                        <td class="py-6 px-8 font-medium text-fc-primary">Member Events</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">✓</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">Priority Access</td>
+                    </tr>
+                    <tr>
+                        <td class="py-6 px-8 font-medium text-fc-primary">Gear Discount</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-fc-text">–</td>
+                        <td class="text-center py-6 px-8 text-fc-text">5%</td>
+                        <td class="text-center py-6 px-8 text-green-500 font-semibold">10%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Sign Up Form -->
+<section id="signup" class="py-20 bg-fc-surface">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Ready to Join?</h2>
+            <p class="text-xl text-fc-text">Start your fencing journey with us today</p>
+        </div>
+        <div class="bg-fc-white rounded-2xl p-8 md:p-12 shadow-2xl">
+            <form class="space-y-8" method="POST">
+                {% csrf_token %}
+                
+                <!-- Membership Selection -->
+                <div>
+                    <label class="block text-lg font-poppins font-semibold text-fc-primary mb-4">Select Membership Plan</label>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="membership_type" value="drop_in" class="sr-only peer">
+                            <div class="p-4 border-2 border-gray-200 rounded-lg peer-checked:border-fc-accent peer-checked:bg-fc-accent/10 transition">
+                                <div class="font-semibold text-fc-primary">Drop-In</div>
+                                <div class="text-sm text-fc-text">$25/class</div>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="membership_type" value="junior" class="sr-only peer">
+                            <div class="p-4 border-2 border-gray-200 rounded-lg peer-checked:border-fc-accent peer-checked:bg-fc-accent/10 transition">
+                                <div class="font-semibold text-fc-primary">Junior</div>
+                                <div class="text-sm text-fc-text">$100/month</div>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="membership_type" value="monthly" class="sr-only peer">
+                            <div class="p-4 border-2 border-gray-200 rounded-lg peer-checked:border-fc-accent peer-checked:bg-fc-accent/10 transition">
+                                <div class="font-semibold text-fc-primary">Monthly</div>
+                                <div class="text-sm text-fc-text">$150/month</div>
+                            </div>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="membership_type" value="annual" class="sr-only peer">
+                            <div class="p-4 border-2 border-gray-200 rounded-lg peer-checked:border-fc-accent peer-checked:bg-fc-accent/10 transition">
+                                <div class="font-semibold text-fc-primary">Annual</div>
+                                <div class="text-sm text-fc-text">$1,500/year</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Personal Information -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-fc-primary mb-2">First Name</label>
+                        <input type="text" name="first_name" required
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-fc-accent focus:border-fc-accent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-fc-primary mb-2">Last Name</label>
+                        <input type="text" name="last_name" required
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-fc-accent focus:border-fc-accent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-fc-primary mb-2">Email Address</label>
+                        <input type="email" name="email" required
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-fc-accent focus:border-fc-accent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-fc-primary mb-2">Phone Number</label>
+                        <input type="tel" name="phone"
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-fc-accent focus:border-fc-accent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-fc-primary mb-2">Date of Birth</label>
+                        <input type="date" name="date_of_birth"
+                               class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-fc-accent focus:border-fc-accent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-fc-primary mb-2">Experience Level</label>
+                        <select name="experience_level"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-fc-accent focus:border-fc-accent">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="competitive">Competitive</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Terms and Submit -->
+                <div class="space-y-6">
+                    <label class="flex items-start">
+                        <input type="checkbox" name="terms" required class="mt-1 mr-3">
+                        <span class="text-sm text-fc-text">I agree to the <a href="#" class="text-fc-accent hover:text-fc-primary">Terms of Service</a> and <a href="#" class="text-fc-accent hover:text-fc-primary">Privacy Policy</a></span>
+                    </label>
+                    
+                    <button type="submit" class="btn-primary w-full py-4 text-lg font-semibold rounded-lg">
+                        Complete Registration
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="py-20 bg-fc-primary">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-poppins font-bold text-fc-white mb-6">Questions About Membership?</h2>
+        <p class="text-xl text-fc-white/80 mb-8 max-w-2xl mx-auto">Our team is here to help you choose the perfect plan for your fencing goals.</p>
+        <a href="{% url 'contact' %}" class="btn-primary px-8 py-4 rounded-lg font-semibold text-lg">
+            Contact Us
+        </a>
+    </div>
+</section>
+{% endblock %} 

@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gradient-hero text-fc-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">About Our <span class="text-fc-accent">Club</span></h1>
+            <p class="text-xl md:text-2xl text-fc-white/90 max-w-3xl mx-auto leading-relaxed">
+                Discover our rich history, meet our dedicated team, and learn about our commitment to excellence in fencing.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- History Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-8">Our History</h2>
+                <p class="text-lg text-fc-text mb-6 leading-relaxed">
+                    Founded in 1984, Fencers Club has been a cornerstone of the fencing community for over 40 years. What began as a small training facility has grown into one of the nation's premier fencing clubs.
+                </p>
+                <p class="text-lg text-fc-text mb-6 leading-relaxed">
+                    Our journey has been marked by numerous achievements, including training Olympic athletes, hosting national championships, and developing innovative training programs that have shaped the future of fencing.
+                </p>
+                <p class="text-lg text-fc-text leading-relaxed">
+                    Today, we continue to build on our legacy while embracing modern training methods and technology to provide the best possible experience for our members.
+                </p>
+            </div>
+            <div class="relative">
+                <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Fencing Club History" 
+                         class="object-cover w-full h-full">
+                </div>
+                <div class="absolute -bottom-8 -right-8 bg-gradient-to-br from-fc-accent to-yellow-400 text-fc-primary p-8 rounded-2xl shadow-2xl">
+                    <div class="text-5xl font-poppins font-bold">40+</div>
+                    <div class="text-lg font-semibold">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Values Section -->
+<section class="bg-fc-surface py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Our Mission & Values</h2>
+            <p class="text-xl text-fc-text max-w-3xl mx-auto">
+                We are committed to fostering excellence in fencing while building a supportive and inclusive community.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 bg-gradient-to-br from-fc-accent to-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="award" class="w-8 h-8 text-fc-primary"></i>
+                </div>
+                <h3 class="text-2xl font-poppins font-bold text-fc-primary mb-4">Excellence</h3>
+                <p class="text-fc-text text-lg leading-relaxed">
+                    We strive for excellence in everything we do, from training methods to competition preparation.
+                </p>
+            </div>
+            <div class="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 bg-gradient-to-br from-fc-accent to-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="users" class="w-8 h-8 text-fc-primary"></i>
+                </div>
+                <h3 class="text-2xl font-poppins font-bold text-fc-primary mb-4">Community</h3>
+                <p class="text-fc-text text-lg leading-relaxed">
+                    We foster a supportive environment where fencers of all levels can grow and succeed together.
+                </p>
+            </div>
+            <div class="bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 bg-gradient-to-br from-fc-accent to-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="lightbulb" class="w-8 h-8 text-fc-primary"></i>
+                </div>
+                <h3 class="text-2xl font-poppins font-bold text-fc-primary mb-4">Innovation</h3>
+                <p class="text-fc-text text-lg leading-relaxed">
+                    We embrace new training methods and technology to stay at the forefront of fencing development.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Our Facilities</h2>
+            <p class="text-xl text-fc-text">World-class facilities designed for champions</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-fc-surface rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+                <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Training Floor" 
+                     class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold text-fc-primary mb-4">Training Floor</h3>
+                    <p class="text-fc-text text-lg leading-relaxed">
+                        State-of-the-art training facility with 20+ strips and electronic scoring equipment.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-fc-surface rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" 
+                     alt="Fitness Center" 
+                     class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold text-fc-primary mb-4">Fitness Center</h3>
+                    <p class="text-fc-text text-lg leading-relaxed">
+                        Fully equipped gym with specialized fencing training equipment and recovery facilities.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-fc-surface rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" 
+                     alt="Pro Shop" 
+                     class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold text-fc-primary mb-4">Pro Shop</h3>
+                    <p class="text-fc-text text-lg leading-relaxed">
+                        On-site equipment shop with expert fitting and maintenance services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="bg-fc-primary py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-white mb-6">What Our Members Say</h2>
+            <p class="text-xl text-fc-white/80">Hear from our community of champions</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-fc-white p-8 rounded-2xl shadow-xl">
+                <div class="flex items-center mb-6">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80" 
+                         alt="Sarah Johnson" 
+                         class="w-16 h-16 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h4 class="text-lg font-poppins font-bold text-fc-primary">Sarah Johnson</h4>
+                        <p class="text-fc-text">Competitive Member</p>
+                    </div>
+                </div>
+                <p class="text-fc-text italic text-lg leading-relaxed">
+                    "The training programs here have helped me reach new heights in my fencing career. The coaches are incredibly supportive and knowledgeable."
+                </p>
+            </div>
+            <div class="bg-fc-white p-8 rounded-2xl shadow-xl">
+                <div class="flex items-center mb-6">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80" 
+                         alt="Michael Chen" 
+                         class="w-16 h-16 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h4 class="text-lg font-poppins font-bold text-fc-primary">Michael Chen</h4>
+                        <p class="text-fc-text">Parent</p>
+                    </div>
+                </div>
+                <p class="text-fc-text italic text-lg leading-relaxed">
+                    "My children have grown so much since joining the club. The community is welcoming and the programs are well-structured for all ages."
+                </p>
+            </div>
+            <div class="bg-fc-white p-8 rounded-2xl shadow-xl">
+                <div class="flex items-center mb-6">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80" 
+                         alt="Emma Rodriguez" 
+                         class="w-16 h-16 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h4 class="text-lg font-poppins font-bold text-fc-primary">Emma Rodriguez</h4>
+                        <p class="text-fc-text">Beginner Member</p>
+                    </div>
+                </div>
+                <p class="text-fc-text italic text-lg leading-relaxed">
+                    "As a beginner, I was nervous about starting fencing, but the coaches and members made me feel welcome. The facilities are amazing!"
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-gradient-to-r from-fc-accent to-yellow-400 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Join Our Community</h2>
+            <p class="text-xl md:text-2xl text-fc-primary/80 mb-12 max-w-3xl mx-auto">
+                Experience the excellence of Fencers Club for yourself. Join us today and become part of our growing family.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="{% url 'membership' %}" class="btn-primary px-8 py-4 rounded-lg font-semibold text-lg">
+                    Become a Member
+                </a>
+                <a href="{% url 'contact' %}" class="border-2 border-fc-primary text-fc-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-primary hover:text-fc-white transition duration-300">
+                    Schedule a Tour
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Fencers Club - Train with Champions{% endblock %}
+
+{% block content %}
+<!-- Hero Banner -->
+<section class="relative h-[90vh] gradient-hero overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-fc-primary via-fc-primary/90 to-transparent"></div>
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-30"></div>
+    <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+        <div class="text-fc-white max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-poppins font-bold mb-6 leading-tight">
+                Train with <span class="text-fc-accent">Champions</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-fc-white/90 leading-relaxed">
+                Join our elite community of fencers and train with Olympic-level coaches in state-of-the-art facilities.
+            </p>
+            <div class="flex flex-wrap gap-6">
+                <a href="{% url 'membership' %}" class="btn-primary px-8 py-4 rounded-lg font-semibold text-lg">
+                    Join Now
+                </a>
+                <a href="{% url 'programs' %}" class="btn-secondary px-8 py-4 rounded-lg font-semibold text-lg">
+                    View Programs
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-fc-accent animate-bounce">
+        <i data-lucide="chevron-down" class="w-8 h-8"></i>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div class="stat-card">
+                <div class="text-6xl font-poppins font-bold text-fc-primary mb-4" data-count="3">0</div>
+                <p class="text-xl text-fc-text font-medium">Olympic Champions</p>
+            </div>
+            <div class="stat-card">
+                <div class="text-6xl font-poppins font-bold text-fc-primary mb-4" data-count="40">0</div>
+                <p class="text-xl text-fc-text font-medium">Years of Excellence</p>
+            </div>
+            <div class="stat-card">
+                <div class="text-6xl font-poppins font-bold text-fc-primary mb-4" data-count="1500">0</div>
+                <p class="text-xl text-fc-text font-medium">Active Members</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Cards -->
+<section class="py-20 bg-fc-surface">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Why Choose Fencers Club?</h2>
+            <p class="text-xl text-fc-text max-w-3xl mx-auto">Experience world-class training in an environment designed for champions</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Elite Coaching -->
+            <div class="bg-fc-white rounded-2xl p-8 hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 bg-gradient-to-br from-fc-accent to-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="award" class="w-8 h-8 text-fc-primary"></i>
+                </div>
+                <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Elite Coaching</h3>
+                <p class="text-fc-text text-lg leading-relaxed">Train with Olympic-level coaches who have produced national champions and international competitors.</p>
+            </div>
+
+            <!-- Community Outreach -->
+            <div class="bg-fc-white rounded-2xl p-8 hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 bg-gradient-to-br from-fc-accent to-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="users" class="w-8 h-8 text-fc-primary"></i>
+                </div>
+                <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Community Outreach</h3>
+                <p class="text-fc-text text-lg leading-relaxed">Making fencing accessible to all through our veterans program, school partnerships, and scholarship initiatives.</p>
+            </div>
+
+            <!-- Inclusive Programs -->
+            <div class="bg-fc-white rounded-2xl p-8 hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+                <div class="w-16 h-16 bg-gradient-to-br from-fc-accent to-yellow-400 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="heart" class="w-8 h-8 text-fc-primary"></i>
+                </div>
+                <h3 class="text-2xl font-poppins font-bold mb-4 text-fc-primary">Inclusive Programs</h3>
+                <p class="text-fc-text text-lg leading-relaxed">From beginners to elite competitors, we offer programs for all skill levels and ages.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Latest News</h2>
+            <p class="text-xl text-fc-text">Stay updated with the latest from our community</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- News Item 1 -->
+            <div class="bg-fc-surface rounded-2xl overflow-hidden hover:shadow-2xl transition duration-500">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Championship Win" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <span class="text-sm text-fc-accent font-semibold">Dec 15, 2024</span>
+                    <h3 class="text-xl font-poppins font-bold mt-2 mb-3 text-fc-primary">Championship Victory at Nationals</h3>
+                    <p class="text-fc-text mb-4">Our athletes dominated the national championships, bringing home multiple gold medals...</p>
+                    <a href="{% url 'news' %}" class="text-fc-accent hover:text-fc-primary transition font-semibold">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="bg-fc-surface rounded-2xl overflow-hidden hover:shadow-2xl transition duration-500">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="New Facility" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <span class="text-sm text-fc-accent font-semibold">Dec 10, 2024</span>
+                    <h3 class="text-xl font-poppins font-bold mt-2 mb-3 text-fc-primary">New Training Facility Opens</h3>
+                    <p class="text-fc-text mb-4">State-of-the-art equipment and expanded training space now available to all members...</p>
+                    <a href="{% url 'news' %}" class="text-fc-accent hover:text-fc-primary transition font-semibold">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="bg-fc-surface rounded-2xl overflow-hidden hover:shadow-2xl transition duration-500">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Youth Program" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <span class="text-sm text-fc-accent font-semibold">Dec 5, 2024</span>
+                    <h3 class="text-xl font-poppins font-bold mt-2 mb-3 text-fc-primary">Youth Program Expansion</h3>
+                    <p class="text-fc-text mb-4">New youth programs launching in 2025 to introduce more kids to the sport...</p>
+                    <a href="{% url 'news' %}" class="text-fc-accent hover:text-fc-primary transition font-semibold">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 bg-fc-primary">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-white mb-6">What Our Members Say</h2>
+            <p class="text-xl text-fc-white/80">Hear from our community of champions</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-fc-white rounded-2xl p-8">
+                <div class="flex items-center mb-6">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="John Smith" class="w-16 h-16 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h4 class="font-poppins font-bold text-fc-primary">John Smith</h4>
+                        <p class="text-fc-text">Olympic Medalist</p>
+                    </div>
+                </div>
+                <p class="text-fc-text italic leading-relaxed">"The training here transformed my career. The coaches' expertise and the community support are unmatched anywhere else."</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-fc-white rounded-2xl p-8">
+                <div class="flex items-center mb-6">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson" class="w-16 h-16 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h4 class="font-poppins font-bold text-fc-primary">Sarah Johnson</h4>
+                        <p class="text-fc-text">National Champion</p>
+                    </div>
+                </div>
+                <p class="text-fc-text italic leading-relaxed">"From beginner to champion - this club made my Olympic dreams a reality. The personalized coaching is incredible."</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-fc-white rounded-2xl p-8">
+                <div class="flex items-center mb-6">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mike Rodriguez" class="w-16 h-16 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h4 class="font-poppins font-bold text-fc-primary">Mike Rodriguez</h4>
+                        <p class="text-fc-text">Youth Member Parent</p>
+                    </div>
+                </div>
+                <p class="text-fc-text italic leading-relaxed">"My daughter has grown so much in confidence and skill. The youth program here is simply outstanding."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-fc-accent to-yellow-400">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Ready to Start Your Journey?</h2>
+            <p class="text-xl text-fc-primary/80 mb-12 max-w-3xl mx-auto">Join our community of champions and experience the best fencing training in the region. Your path to excellence starts here.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="{% url 'membership' %}" class="bg-fc-primary text-fc-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-secondary transition duration-300">
+                    Join Now
+                </a>
+                <a href="{% url 'contact' %}" class="border-2 border-fc-primary text-fc-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-primary hover:text-fc-white transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Animate stats counter
+    function animateCounter(element) {
+        const target = parseInt(element.getAttribute('data-count'));
+        const duration = 2000; // 2 seconds
+        const step = target / (duration / 16); // 60fps
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                element.textContent = target;
+                clearInterval(timer);
+            } else {
+                element.textContent = Math.floor(current);
+            }
+        }, 16);
+    }
+
+    // Start animation when element is in view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    document.querySelectorAll('.stat-card [data-count]').forEach(stat => {
+        observer.observe(stat);
+    });
+</script>
+{% endblock %} 

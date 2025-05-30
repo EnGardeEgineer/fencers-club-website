@@ -1,0 +1,339 @@
+{% extends 'base.html' %}
+
+{% block title %}News & Events - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gradient-hero text-fc-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">News & <span class="text-fc-gold">Events</span></h1>
+            <p class="text-xl md:text-2xl text-fc-silver max-w-3xl mx-auto leading-relaxed">
+                Stay up to date with the latest news, events, and achievements from our Olympic-level fencing community.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Article -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-fc-grey-light rounded-2xl overflow-hidden shadow-fc-card">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="relative h-64 md:h-auto">
+                    <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                         alt="Olympic Training at Fencers Club"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-8 md:p-12">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <span class="px-4 py-2 bg-fc-red text-fc-white text-sm font-semibold rounded-full">Featured</span>
+                        <span class="text-fc-grey">March 15, 2024</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold mb-6 text-fc-grey-dark">Olympic Training Success at Fencers Club</h2>
+                    <p class="text-fc-grey mb-8 leading-relaxed text-lg">
+                        Our elite athletes continue to excel under the guidance of Olympic coaches Alexey Cheremsky and Simon Gershon. Recent training sessions have produced remarkable results, with several club members qualifying for national competitions.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-fc-red hover:text-fc-grey-dark transition font-semibold">
+                        Read Full Story
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories -->
+<section class="py-12 bg-fc-grey-light">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-wrap gap-4 justify-center">
+            <button class="px-8 py-3 bg-fc-red text-fc-white rounded-full hover:bg-fc-grey-dark transition font-semibold">
+                All News
+            </button>
+            <button class="px-8 py-3 bg-fc-white text-fc-grey rounded-full hover:bg-fc-red hover:text-fc-white transition font-semibold">
+                Events
+            </button>
+            <button class="px-8 py-3 bg-fc-white text-fc-grey rounded-full hover:bg-fc-red hover:text-fc-white transition font-semibold">
+                Competitions
+            </button>
+            <button class="px-8 py-3 bg-fc-white text-fc-grey rounded-full hover:bg-fc-red hover:text-fc-white transition font-semibold">
+                Training
+            </button>
+            <button class="px-8 py-3 bg-fc-white text-fc-grey rounded-full hover:bg-fc-red hover:text-fc-white transition font-semibold">
+                Community
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- News Grid -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- News Card 1 -->
+            <article class="bg-fc-grey-light rounded-2xl overflow-hidden shadow-fc-card hover-lift">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+                         alt="Summer Camp Registration"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-gold text-fc-grey-dark text-sm font-semibold rounded-full">Events</span>
+                        <span class="text-fc-grey">March 10, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">Summer Intensive Camp Registration Open</h3>
+                    <p class="text-fc-grey mb-4 leading-relaxed">
+                        Join us for an exciting summer of elite fencing training! Our intensive camp program with Olympic-level coaching is now accepting registrations for 2024.
+                    </p>
+                    <a href="#" class="text-fc-red hover:text-fc-grey-dark transition font-semibold">Read More →</a>
+                </div>
+            </article>
+
+            <!-- News Card 2 -->
+            <article class="bg-fc-grey-light rounded-2xl overflow-hidden shadow-fc-card hover-lift">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+                         alt="New Training Program"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-navy text-fc-white text-sm font-semibold rounded-full">Training</span>
+                        <span class="text-fc-grey">March 5, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">Advanced Competitive Program Launched</h3>
+                    <p class="text-fc-grey mb-4 leading-relaxed">
+                        We're excited to announce our new advanced training program designed for competitive fencers seeking Olympic-level instruction and development.
+                    </p>
+                    <a href="#" class="text-fc-red hover:text-fc-grey-dark transition font-semibold">Read More →</a>
+                </div>
+            </article>
+
+            <!-- News Card 3 -->
+            <article class="bg-fc-grey-light rounded-2xl overflow-hidden shadow-fc-card hover-lift">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+                         alt="Community Outreach"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-red text-fc-white text-sm font-semibold rounded-full">Community</span>
+                        <span class="text-fc-grey">March 1, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">NYC Schools Outreach Program Success</h3>
+                    <p class="text-fc-grey mb-4 leading-relaxed">
+                        Our recent community outreach program introduced fencing to over 500 local students across 25 NYC schools, expanding access to our sport.
+                    </p>
+                    <a href="#" class="text-fc-red hover:text-fc-grey-dark transition font-semibold">Read More →</a>
+                </div>
+            </article>
+
+            <!-- News Card 4 -->
+            <article class="bg-fc-grey-light rounded-2xl overflow-hidden shadow-fc-card hover-lift">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1601285794032-e3a34e31e6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                         alt="Marcel Miernik Memorial"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-gold text-fc-grey-dark text-sm font-semibold rounded-full">Events</span>
+                        <span class="text-fc-grey">February 25, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">Marcel Miernik Memorial Tournament</h3>
+                    <p class="text-fc-grey mb-4 leading-relaxed">
+                        Join us for our annual Marcel Miernik Memorial Tournament, honoring the legacy of one of fencing's greatest champions and our club's history.
+                    </p>
+                    <a href="#" class="text-fc-red hover:text-fc-grey-dark transition font-semibold">Read More →</a>
+                </div>
+            </article>
+
+            <!-- News Card 5 -->
+            <article class="bg-fc-grey-light rounded-2xl overflow-hidden shadow-fc-card hover-lift">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+                         alt="Youth Development"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-navy text-fc-white text-sm font-semibold rounded-full">Training</span>
+                        <span class="text-fc-grey">February 20, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">Youth Development Program Expansion</h3>
+                    <p class="text-fc-grey mb-4 leading-relaxed">
+                        Our youth development program continues to grow, with new classes and specialized coaching for young fencers ages 8-16.
+                    </p>
+                    <a href="#" class="text-fc-red hover:text-fc-grey-dark transition font-semibold">Read More →</a>
+                </div>
+            </article>
+
+            <!-- News Card 6 -->
+            <article class="bg-fc-grey-light rounded-2xl overflow-hidden shadow-fc-card hover-lift">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+                         alt="Equipment Update"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-red text-fc-white text-sm font-semibold rounded-full">Club News</span>
+                        <span class="text-fc-grey">February 15, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">New Equipment & Facility Upgrades</h3>
+                    <p class="text-fc-grey mb-4 leading-relaxed">
+                        We've invested in state-of-the-art fencing equipment and facility improvements to provide the best training environment for our members.
+                    </p>
+                    <a href="#" class="text-fc-red hover:text-fc-grey-dark transition font-semibold">Read More →</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-16 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <button class="px-6 py-3 border-2 border-fc-grey rounded-lg hover:bg-fc-red hover:text-fc-white hover:border-fc-red transition font-semibold">
+                    Previous
+                </button>
+                <button class="px-6 py-3 bg-fc-red text-fc-white rounded-lg font-semibold">1</button>
+                <button class="px-6 py-3 border-2 border-fc-grey rounded-lg hover:bg-fc-red hover:text-fc-white hover:border-fc-red transition font-semibold">2</button>
+                <button class="px-6 py-3 border-2 border-fc-grey rounded-lg hover:bg-fc-red hover:text-fc-white hover:border-fc-red transition font-semibold">3</button>
+                <button class="px-6 py-3 border-2 border-fc-grey rounded-lg hover:bg-fc-red hover:text-fc-white hover:border-fc-red transition font-semibold">
+                    Next
+                </button>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-20 gradient-hero text-fc-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold mb-6">Stay <span class="text-fc-gold">Updated</span></h2>
+        <p class="text-xl text-fc-silver mb-12 leading-relaxed">
+            Subscribe to our newsletter to receive the latest news, events, and updates directly from the Fencers Club community.
+        </p>
+        <form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
+            <input type="email" placeholder="Enter your email address"
+                   class="flex-1 px-6 py-4 rounded-lg border-2 border-fc-white bg-fc-white text-fc-grey-dark focus:outline-none focus:ring-2 focus:ring-fc-gold">
+            <button type="submit"
+                    class="px-8 py-4 bg-fc-red text-fc-white rounded-lg font-semibold hover:bg-fc-grey-dark transition">
+                Subscribe
+            </button>
+        </form>
+        <p class="text-sm text-fc-silver mt-4">Join over 1,000 members receiving our weekly updates</p>
+    </div>
+</section>
+
+<!-- Upcoming Events -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-grey-dark mb-6">
+                Upcoming <span class="text-fc-red">Events</span>
+            </h2>
+            <p class="text-xl text-fc-grey max-w-3xl mx-auto leading-relaxed">
+                Don't miss these exciting upcoming events at Fencers Club
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Event 1 -->
+            <div class="bg-fc-grey-light rounded-2xl p-8 shadow-fc-card hover-lift">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-3 py-1 bg-fc-red text-fc-white text-sm font-semibold rounded-full">Tournament</span>
+                    <span class="text-fc-grey font-semibold">Apr 15</span>
+                </div>
+                <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">Spring Championship</h3>
+                <p class="text-fc-grey mb-4">Annual spring tournament featuring all three weapons. Open to all skill levels.</p>
+                <div class="flex items-center text-fc-grey text-sm">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    9:00 AM - 6:00 PM
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="bg-fc-grey-light rounded-2xl p-8 shadow-fc-card hover-lift">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-3 py-1 bg-fc-gold text-fc-grey-dark text-sm font-semibold rounded-full">Workshop</span>
+                    <span class="text-fc-grey font-semibold">Apr 22</span>
+                </div>
+                <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">Olympic Coaching Clinic</h3>
+                <p class="text-fc-grey mb-4">Special clinic with Olympic coaches focusing on advanced techniques and tactics.</p>
+                <div class="flex items-center text-fc-grey text-sm">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    2:00 PM - 5:00 PM
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="bg-fc-grey-light rounded-2xl p-8 shadow-fc-card hover-lift">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="px-3 py-1 bg-fc-navy text-fc-white text-sm font-semibold rounded-full">Social</span>
+                    <span class="text-fc-grey font-semibold">May 1</span>
+                </div>
+                <h3 class="text-xl font-poppins font-bold mb-3 text-fc-grey-dark">Member Appreciation Night</h3>
+                <p class="text-fc-grey mb-4">Celebrate our community with food, awards, and special recognition for our members.</p>
+                <div class="flex items-center text-fc-grey text-sm">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    6:00 PM - 9:00 PM
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Category filter functionality
+    document.querySelectorAll('section:nth-child(3) button').forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active state from all buttons
+            document.querySelectorAll('section:nth-child(3) button').forEach(btn => {
+                btn.classList.remove('bg-fc-red', 'text-fc-white');
+                btn.classList.add('bg-fc-white', 'text-fc-grey');
+            });
+            
+            // Add active state to clicked button
+            this.classList.remove('bg-fc-white', 'text-fc-grey');
+            this.classList.add('bg-fc-red', 'text-fc-white');
+            
+            // TODO: Implement actual category filtering
+        });
+    });
+
+    // Newsletter form submission
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const button = this.querySelector('button');
+        const originalText = button.textContent;
+        
+        button.textContent = 'Subscribing...';
+        button.disabled = true;
+        
+        setTimeout(() => {
+            button.textContent = 'Subscribed!';
+            button.style.backgroundColor = '#22c55e';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+                button.style.backgroundColor = '';
+                this.reset();
+            }, 2000);
+        }, 1000);
+    });
+</script>
+{% endblock %} 

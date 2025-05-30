@@ -1,0 +1,318 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Photo Gallery - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 gradient-hero overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"%23ffffff\" fill-opacity=\"0.1\"><path d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/></g></g></svg>');"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 text-center relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-poppins font-bold text-fc-white mb-6 leading-tight">
+                Photo <span class="text-gradient">Gallery</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-fc-silver mb-8 leading-relaxed">
+                Capturing the passion, precision, and excellence of fencing at Fencers Club. 
+                From training sessions to championship moments.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Categories -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Filter Buttons -->
+        <div class="text-center mb-16">
+            <div class="inline-flex bg-fc-grey-light rounded-full p-2 mb-8">
+                <button class="gallery-filter active px-6 py-3 rounded-full font-inter font-semibold text-sm transition-all duration-300" data-filter="all">
+                    All Photos
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full font-inter font-semibold text-sm transition-all duration-300" data-filter="training">
+                    Training
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full font-inter font-semibold text-sm transition-all duration-300" data-filter="competition">
+                    Competition
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full font-inter font-semibold text-sm transition-all duration-300" data-filter="events">
+                    Events
+                </button>
+                <button class="gallery-filter px-6 py-3 rounded-full font-inter font-semibold text-sm transition-all duration-300" data-filter="youth">
+                    Youth Program
+                </button>
+            </div>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="gallery-grid">
+            <!-- Training Photos -->
+            <div class="gallery-item training group cursor-pointer" data-category="training">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1578764519067-2e4b83e5fde8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Group training session" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Group Training Session</h3>
+                        <p class="text-sm text-fc-silver">Advanced technique development</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-red text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Training
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item competition group cursor-pointer" data-category="competition">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Dramatic fencing duel" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Championship Final</h3>
+                        <p class="text-sm text-fc-silver">Intense competition moment</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-gold text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Competition
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item youth group cursor-pointer" data-category="youth">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Young fencers learning" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Youth Development</h3>
+                        <p class="text-sm text-fc-silver">Building future champions</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-navy text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Youth
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item training group cursor-pointer" data-category="training">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Female fencer in stance" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Perfect Form</h3>
+                        <p class="text-sm text-fc-silver">Technical precision training</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-red text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Training
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item competition group cursor-pointer" data-category="competition">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1566220040285-b5e1d7500ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Professional fencer in gear" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Elite Competition</h3>
+                        <p class="text-sm text-fc-silver">National championship level</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-gold text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Competition
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item events group cursor-pointer" data-category="events">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1601285794032-e3a34e31e6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Club event gathering" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Club Social Event</h3>
+                        <p class="text-sm text-fc-silver">Community building</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-navy text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Events
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item training group cursor-pointer" data-category="training">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Foil technique demonstration" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Foil Mastery</h3>
+                        <p class="text-sm text-fc-silver">Advanced weapon technique</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-red text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Training
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item youth group cursor-pointer" data-category="youth">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Coach with young student" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">One-on-One Coaching</h3>
+                        <p class="text-sm text-fc-silver">Personalized instruction</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-navy text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Youth
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more gallery items as needed -->
+            <div class="gallery-item events group cursor-pointer" data-category="events">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Award ceremony" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Awards Ceremony</h3>
+                        <p class="text-sm text-fc-silver">Celebrating achievements</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-navy text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Events
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item competition group cursor-pointer" data-category="competition">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616c4dc1ed3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Tournament action" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Tournament Action</h3>
+                        <p class="text-sm text-fc-silver">Competitive excellence</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-gold text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Competition
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item training group cursor-pointer" data-category="training">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Sabre training session" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Sabre Training</h3>
+                        <p class="text-sm text-fc-silver">Speed and precision</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-red text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Training
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item events group cursor-pointer" data-category="events">
+                <div class="relative overflow-hidden rounded-2xl shadow-fc-card hover:shadow-fc-hover transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Club facility tour" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-fc-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-4 left-4 text-fc-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="font-poppins font-bold text-lg">Facility Tour</h3>
+                        <p class="text-sm text-fc-silver">State-of-the-art equipment</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-fc-navy text-fc-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Events
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 gradient-hero">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-white mb-6">
+            Be Part of Our <span class="text-fc-gold">Story</span>
+        </h2>
+        <p class="text-xl text-fc-silver mb-10 max-w-3xl mx-auto leading-relaxed">
+            Join our community of passionate fencers and create your own memorable moments at Fencers Club.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="{% url 'contact' %}" class="btn-primary text-fc-white px-10 py-5 rounded-full font-inter font-semibold text-xl inline-flex items-center justify-center">
+                Schedule a Visit
+                <svg class="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+            </a>
+            <a href="{% url 'membership' %}" class="btn-outline bg-fc-white text-fc-red border-fc-white hover:bg-fc-red hover:text-fc-white px-10 py-5 rounded-full font-inter font-semibold text-xl">
+                Join Our Club
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Gallery Filtering -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-fc-red', 'text-fc-white');
+                btn.classList.add('text-fc-grey', 'hover:text-fc-red');
+            });
+            
+            // Add active class to clicked button
+            button.classList.add('active', 'bg-fc-red', 'text-fc-white');
+            button.classList.remove('text-fc-grey', 'hover:text-fc-red');
+            
+            const filter = button.getAttribute('data-filter');
+            
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+    
+    // Initialize active state
+    document.querySelector('.gallery-filter[data-filter="all"]').classList.add('bg-fc-red', 'text-fc-white');
+    document.querySelectorAll('.gallery-filter:not([data-filter="all"])').forEach(btn => {
+        btn.classList.add('text-fc-grey', 'hover:text-fc-red');
+    });
+});
+</script>
+{% endblock %} 

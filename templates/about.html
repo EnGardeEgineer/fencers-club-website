@@ -1,0 +1,299 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - Fencers Club | Est. 1883{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gradient-hero text-fc-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">About <span class="text-fc-gold">Fencers Club</span></h1>
+            <p class="text-xl md:text-2xl text-fc-silver max-w-3xl mx-auto leading-relaxed">
+                Excellence through fencing since 1883. Discover our rich history, mission, and commitment to the fencing community.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-grey-dark mb-6">
+                    Welcome to <span class="text-fc-red">Fencers Club</span>
+                </h2>
+                <p class="text-lg text-fc-grey leading-relaxed mb-6">
+                    Fencers Club is a not-for-profit organization dedicated to the pursuit of excellence through the sport of fencing. 
+                    We actively support a culture of sharing by performing community services that extend beyond fencing.
+                </p>
+                <p class="text-lg text-fc-grey leading-relaxed mb-8">
+                    Located in the heart of Manhattan, our club has been training champions and building character through the 
+                    noble art of fencing for over 140 years.
+                </p>
+                
+                <!-- Philosophy -->
+                <div class="bg-fc-grey-light p-6 rounded-2xl">
+                    <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-4">Our Philosophy</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-fc-red text-fc-white px-4 py-2 rounded-full text-sm font-medium">Teach</span>
+                        <span class="bg-fc-red text-fc-white px-4 py-2 rounded-full text-sm font-medium">Connect</span>
+                        <span class="bg-fc-red text-fc-white px-4 py-2 rounded-full text-sm font-medium">Inspire</span>
+                        <span class="bg-fc-red text-fc-white px-4 py-2 rounded-full text-sm font-medium">Motivate</span>
+                        <span class="bg-fc-red text-fc-white px-4 py-2 rounded-full text-sm font-medium">Mentor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-fc-card">
+                    <img src="https://images.unsplash.com/photo-1601285794032-e3a34e31e6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fencing training at Fencers Club" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-fc-red text-fc-white px-6 py-4 rounded-2xl shadow-fc-card">
+                    <div class="text-center">
+                        <div class="text-3xl font-poppins font-bold">1883</div>
+                        <div class="text-sm font-inter">Established</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Statement -->
+<section class="py-20 bg-fc-grey-light">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-grey-dark mb-8">
+            Mission <span class="text-fc-red">Statement</span>
+        </h2>
+        <div class="bg-fc-white p-8 md:p-12 rounded-3xl shadow-fc-card">
+            <blockquote class="text-xl md:text-2xl text-fc-grey-dark leading-relaxed italic font-inter">
+                "Fencers Club is a 501(c)(3) not-for-profit organization dedicated to the pursuit of excellence through the sport of fencing. 
+                We actively support a culture of sharing by performing community services that extend beyond fencing."
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!-- History Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-grey-dark mb-6">
+                Our <span class="text-fc-red">History</span>
+            </h2>
+            <p class="text-xl text-fc-grey max-w-3xl mx-auto leading-relaxed">
+                Over 140 years of excellence, tradition, and innovation in the sport of fencing.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 gradient-red rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-fc-white font-poppins font-bold text-xl">1883</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-2">Founding</h3>
+                            <p class="text-fc-grey leading-relaxed">
+                                Fencers Club was established in New York City, becoming one of America's premier fencing institutions.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-fc-navy rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-2">Olympic Excellence</h3>
+                            <p class="text-fc-grey leading-relaxed">
+                                Training Olympic and world championship athletes through decades of expert coaching and competitive programs.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-fc-gold rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-2">Community Impact</h3>
+                            <p class="text-fc-grey leading-relaxed">
+                                Expanding our mission to include extensive community outreach and youth development programs across NYC.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-fc-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Historic fencing at Fencers Club" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Current Achievements -->
+<section class="py-20 bg-fc-grey-light">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-grey-dark mb-6">
+                Fencers Club <span class="text-fc-red">Today</span>
+            </h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Current World Team Members -->
+            <div class="bg-fc-white p-8 rounded-2xl text-center shadow-fc-card hover-lift">
+                <div class="w-16 h-16 gradient-red rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-2">World Team</h3>
+                <p class="text-fc-grey">Current World Team Members</p>
+            </div>
+
+            <!-- Schools -->
+            <div class="bg-fc-white p-8 rounded-2xl text-center shadow-fc-card hover-lift">
+                <div class="w-16 h-16 bg-fc-navy rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <span class="text-fc-white font-poppins font-bold text-2xl">25</span>
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-2">Schools</h3>
+                <p class="text-fc-grey">Partner Schools & Centers</p>
+            </div>
+
+            <!-- Students -->
+            <div class="bg-fc-white p-8 rounded-2xl text-center shadow-fc-card hover-lift">
+                <div class="w-16 h-16 bg-fc-gold rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <span class="text-fc-white font-poppins font-bold text-lg">1000+</span>
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-2">Students</h3>
+                <p class="text-fc-grey">Annual Student Impact</p>
+            </div>
+
+            <!-- Years -->
+            <div class="bg-fc-white p-8 rounded-2xl text-center shadow-fc-card hover-lift">
+                <div class="w-16 h-16 gradient-red rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <span class="text-fc-white font-poppins font-bold text-lg">140+</span>
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-2">Years</h3>
+                <p class="text-fc-grey">Of Excellence</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Governance Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-grey-dark mb-6">
+                Governance & <span class="text-fc-red">Leadership</span>
+            </h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Board of Directors -->
+            <div class="bg-fc-grey-light p-8 rounded-2xl shadow-fc-card hover-lift">
+                <div class="w-16 h-16 gradient-red rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-4">Board of Directors</h3>
+                <p class="text-fc-grey leading-relaxed">
+                    Dedicated leadership guiding our club's strategic direction and ensuring our mission is fulfilled.
+                </p>
+            </div>
+
+            <!-- DEI Advisory Council -->
+            <div class="bg-fc-grey-light p-8 rounded-2xl shadow-fc-card hover-lift">
+                <div class="w-16 h-16 bg-fc-navy rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-4">DEI Advisory Council</h3>
+                <p class="text-fc-grey leading-relaxed">
+                    Promoting diversity, equity, and inclusion throughout all aspects of our club and programs.
+                </p>
+            </div>
+
+            <!-- Code of Conduct -->
+            <div class="bg-fc-grey-light p-8 rounded-2xl shadow-fc-card hover-lift">
+                <div class="w-16 h-16 bg-fc-gold rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-poppins font-bold text-fc-grey-dark mb-4">Code of Conduct</h3>
+                <p class="text-fc-grey leading-relaxed">
+                    Maintaining the highest standards of sportsmanship, respect, and ethical behavior.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+<section class="py-20 gradient-hero text-fc-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold mb-8">
+            Visit Our <span class="text-fc-gold">Historic Facility</span>
+        </h2>
+        <div class="bg-fc-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-fc-white border-opacity-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="w-16 h-16 bg-fc-red rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-2">Location</h3>
+                    <p class="text-fc-silver">20 West 33rd Street, 2nd Flr.<br>New York, NY 10001</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-fc-red rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-2">Phone</h3>
+                    <p class="text-fc-silver">212.807.6947</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-fc-red rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-fc-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-2">Email</h3>
+                    <p class="text-fc-silver">info@fencersclub.org</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12">
+            <a href="{% url 'contact' %}" class="btn-primary text-fc-white px-8 py-4 rounded-full font-inter font-semibold text-lg inline-flex items-center">
+                Get in Touch
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %} 

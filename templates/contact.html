@@ -1,0 +1,271 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gradient-hero text-fc-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">Contact <span class="text-fc-accent">Us</span></h1>
+            <p class="text-xl md:text-2xl text-fc-white/90 max-w-3xl mx-auto leading-relaxed">
+                Have questions? We're here to help. Reach out to us through any of the channels below.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-20 bg-fc-surface">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Contact Information -->
+            <div>
+                <div class="bg-fc-white rounded-2xl p-10 shadow-xl mb-10">
+                    <h2 class="text-3xl font-poppins font-bold mb-8 text-fc-primary">Get in Touch</h2>
+                    
+                    <!-- Hours -->
+                    <div class="mb-10">
+                        <h3 class="text-xl font-poppins font-bold mb-6 text-fc-primary">Hours of Operation</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-2 border-b border-fc-surface">
+                                <span class="text-fc-text font-medium">Monday - Friday</span>
+                                <span class="text-fc-text">6:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-fc-surface">
+                                <span class="text-fc-text font-medium">Saturday</span>
+                                <span class="text-fc-text">8:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2">
+                                <span class="text-fc-text font-medium">Sunday</span>
+                                <span class="text-fc-text">9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-fc-accent rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-fc-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-bold mb-3 text-fc-primary">Location</h3>
+                                <p class="text-fc-text leading-relaxed">123 Fencing Way<br>Sports District<br>City, State 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-fc-accent rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-fc-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-bold mb-3 text-fc-primary">Phone</h3>
+                                <p class="text-fc-text text-lg">(555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-fc-accent rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-fc-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-bold mb-3 text-fc-primary">Email</h3>
+                                <p class="text-fc-text text-lg">info@fencersclub.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-10">
+                        <h3 class="text-xl font-poppins font-bold mb-6 text-fc-primary">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-fc-surface rounded-xl flex items-center justify-center text-fc-accent hover:bg-fc-accent hover:text-fc-white transition duration-300">
+                                <i data-lucide="facebook" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-fc-surface rounded-xl flex items-center justify-center text-fc-accent hover:bg-fc-accent hover:text-fc-white transition duration-300">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-fc-surface rounded-xl flex items-center justify-center text-fc-accent hover:bg-fc-accent hover:text-fc-white transition duration-300">
+                                <i data-lucide="twitter" class="w-6 h-6"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-fc-surface rounded-xl flex items-center justify-center text-fc-accent hover:bg-fc-accent hover:text-fc-white transition duration-300">
+                                <i data-lucide="youtube" class="w-6 h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.71277937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b5ae01!2sOne%20World%20Trade%20Center!5e0!3m2!1sen!2sus!4v1645564759436!5m2!1sen!2sus"
+                        width="100%" 
+                        height="350" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-fc-white rounded-2xl p-10 shadow-xl">
+                <h2 class="text-3xl font-poppins font-bold mb-8 text-fc-primary">Send Us a Message</h2>
+                <form class="space-y-6" method="POST" action="#" onsubmit="return handleFormSubmit(event)">
+                    {% csrf_token %}
+                    
+                    <!-- Name -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-fc-primary mb-3">First Name</label>
+                            <input type="text" name="first_name" required
+                                   class="w-full px-4 py-3 rounded-xl border-2 border-fc-surface focus:outline-none focus:border-fc-accent transition duration-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-fc-primary mb-3">Last Name</label>
+                            <input type="text" name="last_name" required
+                                   class="w-full px-4 py-3 rounded-xl border-2 border-fc-surface focus:outline-none focus:border-fc-accent transition duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-fc-primary mb-3">Email</label>
+                            <input type="email" name="email" required
+                                   class="w-full px-4 py-3 rounded-xl border-2 border-fc-surface focus:outline-none focus:border-fc-accent transition duration-300">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-fc-primary mb-3">Phone</label>
+                            <input type="tel" name="phone"
+                                   class="w-full px-4 py-3 rounded-xl border-2 border-fc-surface focus:outline-none focus:border-fc-accent transition duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label class="block text-sm font-semibold text-fc-primary mb-3">Subject</label>
+                        <select name="subject" required
+                                class="w-full px-4 py-3 rounded-xl border-2 border-fc-surface focus:outline-none focus:border-fc-accent transition duration-300">
+                            <option value="">Select a subject...</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="classes">Class Information</option>
+                            <option value="private">Private Lessons</option>
+                            <option value="events">Events & Camps</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-sm font-semibold text-fc-primary mb-3">Message</label>
+                        <textarea name="message" rows="6" required
+                                  class="w-full px-4 py-3 rounded-xl border-2 border-fc-surface focus:outline-none focus:border-fc-accent transition duration-300 resize-none"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                            class="btn-primary w-full px-8 py-4 rounded-xl font-bold text-lg transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 bg-fc-white">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center mb-16 text-fc-primary">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+            <div class="bg-fc-surface rounded-2xl p-8 hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-poppins font-bold mb-4 text-fc-primary">How do I schedule a tour?</h3>
+                <p class="text-fc-text leading-relaxed">You can schedule a tour by calling us at (555) 123-4567 or by filling out the contact form above. Tours are available Monday through Friday between 10 AM and 4 PM.</p>
+            </div>
+            <div class="bg-fc-surface rounded-2xl p-8 hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-poppins font-bold mb-4 text-fc-primary">What are your parking options?</h3>
+                <p class="text-fc-text leading-relaxed">We have a dedicated parking lot for members and visitors. Street parking is also available in the surrounding area.</p>
+            </div>
+            <div class="bg-fc-surface rounded-2xl p-8 hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-poppins font-bold mb-4 text-fc-primary">Do you offer equipment rental?</h3>
+                <p class="text-fc-text leading-relaxed">Yes, we provide basic equipment rental for beginners and visitors. Members are encouraged to purchase their own equipment as they progress.</p>
+            </div>
+            <div class="bg-fc-surface rounded-2xl p-8 hover:shadow-lg transition duration-300">
+                <h3 class="text-xl font-poppins font-bold mb-4 text-fc-primary">What should I bring to my first lesson?</h3>
+                <p class="text-fc-text leading-relaxed">For your first lesson, just bring comfortable athletic clothing and sneakers. We provide all necessary equipment for beginners, including masks, jackets, and weapons.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-fc-accent to-yellow-400">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Ready to Begin?</h2>
+        <p class="text-xl md:text-2xl text-fc-primary/80 mb-12 max-w-3xl mx-auto">Join our community of champions and start your fencing journey today.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="{% url 'membership' %}" class="bg-fc-primary text-fc-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-secondary transition duration-300">
+                Join Now
+            </a>
+            <a href="{% url 'programs' %}" class="border-2 border-fc-primary text-fc-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-primary hover:text-fc-white transition duration-300">
+                View Programs
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        
+        // Show loading state
+        const submitButton = event.target.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        // Simulate form submission (replace with actual form handling)
+        setTimeout(() => {
+            // Show success message
+            submitButton.textContent = 'Message Sent!';
+            submitButton.style.backgroundColor = '#22c55e';
+            
+            // Reset form after delay
+            setTimeout(() => {
+                event.target.reset();
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+                submitButton.style.backgroundColor = '';
+            }, 2000);
+        }, 1000);
+        
+        return false;
+    }
+    
+    // Form validation
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        const inputs = form.querySelectorAll('input, select, textarea');
+        
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.hasAttribute('required') && !this.value.trim()) {
+                    this.style.borderColor = '#ef4444';
+                } else {
+                    this.style.borderColor = '';
+                }
+            });
+            
+            input.addEventListener('input', function() {
+                if (this.style.borderColor === 'rgb(239, 68, 68)') {
+                    this.style.borderColor = '';
+                }
+            });
+        });
+    });
+</script>
+{% endblock %} 

@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+
+{% block title %}News & Events - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-fc-primary text-fc-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-poppins font-bold mb-6">News & Events</h1>
+        <p class="text-xl text-fc-muted max-w-2xl">
+            Stay up to date with the latest news, events, and achievements from our fencing community.
+        </p>
+    </div>
+</section>
+
+<!-- Featured Article -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-fc-surface rounded-lg overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="relative h-64 md:h-auto">
+                    <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                         alt="Featured Article"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-accent text-fc-white text-sm rounded-full">Featured</span>
+                        <span class="text-fc-muted">March 15, 2024</span>
+                    </div>
+                    <h2 class="text-3xl font-poppins font-bold mb-4">National Championship Success</h2>
+                    <p class="text-fc-text mb-6">
+                        Our club's elite team dominated the National Championships, bringing home multiple medals and setting new records. Read about their journey to victory and what's next for our champions.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-fc-primary hover:text-fc-accent transition">
+                        Read More
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories -->
+<section class="py-8 bg-fc-surface">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-wrap gap-4 justify-center">
+            <button class="px-6 py-2 bg-fc-primary text-fc-white rounded-full hover:bg-opacity-90 transition">
+                All News
+            </button>
+            <button class="px-6 py-2 bg-fc-white text-fc-text rounded-full hover:bg-fc-primary hover:text-fc-white transition">
+                Events
+            </button>
+            <button class="px-6 py-2 bg-fc-white text-fc-text rounded-full hover:bg-fc-primary hover:text-fc-white transition">
+                Competitions
+            </button>
+            <button class="px-6 py-2 bg-fc-white text-fc-text rounded-full hover:bg-fc-primary hover:text-fc-white transition">
+                Training
+            </button>
+            <button class="px-6 py-2 bg-fc-white text-fc-text rounded-full hover:bg-fc-primary hover:text-fc-white transition">
+                Community
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- News Grid -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- News Card 1 -->
+            <article class="bg-fc-surface rounded-lg overflow-hidden">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                         alt="News Article"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-accent text-fc-white text-sm rounded-full">Events</span>
+                        <span class="text-fc-muted">March 10, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-2">Summer Camp Registration Open</h3>
+                    <p class="text-fc-text mb-4">
+                        Join us for an exciting summer of fencing! Our intensive summer camp program is now accepting registrations.
+                    </p>
+                    <a href="#" class="text-fc-primary hover:text-fc-accent transition">Read More →</a>
+                </div>
+            </article>
+
+            <!-- News Card 2 -->
+            <article class="bg-fc-surface rounded-lg overflow-hidden">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                         alt="News Article"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-accent text-fc-white text-sm rounded-full">Training</span>
+                        <span class="text-fc-muted">March 5, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-2">New Training Program Launched</h3>
+                    <p class="text-fc-text mb-4">
+                        We're excited to announce our new advanced training program designed for competitive fencers.
+                    </p>
+                    <a href="#" class="text-fc-primary hover:text-fc-accent transition">Read More →</a>
+                </div>
+            </article>
+
+            <!-- News Card 3 -->
+            <article class="bg-fc-surface rounded-lg overflow-hidden">
+                <div class="relative h-48">
+                    <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                         alt="News Article"
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="px-3 py-1 bg-fc-accent text-fc-white text-sm rounded-full">Community</span>
+                        <span class="text-fc-muted">March 1, 2024</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold mb-2">Community Outreach Success</h3>
+                    <p class="text-fc-text mb-4">
+                        Our recent community outreach program introduced fencing to over 200 local students.
+                    </p>
+                    <a href="#" class="text-fc-primary hover:text-fc-accent transition">Read More →</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <button class="px-4 py-2 border border-fc-muted rounded-md hover:bg-fc-primary hover:text-fc-white transition">
+                    Previous
+                </button>
+                <button class="px-4 py-2 bg-fc-primary text-fc-white rounded-md">1</button>
+                <button class="px-4 py-2 border border-fc-muted rounded-md hover:bg-fc-primary hover:text-fc-white transition">2</button>
+                <button class="px-4 py-2 border border-fc-muted rounded-md hover:bg-fc-primary hover:text-fc-white transition">3</button>
+                <button class="px-4 py-2 border border-fc-muted rounded-md hover:bg-fc-primary hover:text-fc-white transition">
+                    Next
+                </button>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-16 bg-fc-surface">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-poppins font-bold mb-4">Stay Updated</h2>
+        <p class="text-fc-text mb-8">
+            Subscribe to our newsletter to receive the latest news, events, and updates directly in your inbox.
+        </p>
+        <form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
+            <input type="email" placeholder="Enter your email"
+                   class="flex-1 px-4 py-2 rounded-md border border-fc-muted focus:outline-none focus:ring-2 focus:ring-fc-accent">
+            <button type="submit"
+                    class="px-8 py-2 bg-fc-primary text-fc-white rounded-md font-semibold hover:bg-opacity-90 transition">
+                Subscribe
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    // Category filter functionality
+    document.querySelectorAll('.bg-fc-surface button').forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active state from all buttons
+            document.querySelectorAll('.bg-fc-surface button').forEach(btn => {
+                btn.classList.remove('bg-fc-primary', 'text-fc-white');
+                btn.classList.add('bg-fc-white', 'text-fc-text');
+            });
+            
+            // Add active state to clicked button
+            this.classList.remove('bg-fc-white', 'text-fc-text');
+            this.classList.add('bg-fc-primary', 'text-fc-white');
+            
+            // TODO: Implement actual category filtering
+        });
+    });
+</script>
+{% endblock %} 

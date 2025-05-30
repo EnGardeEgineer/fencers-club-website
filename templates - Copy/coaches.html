@@ -1,0 +1,269 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Coaches - Fencers Club{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gradient-hero text-fc-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">Our <span class="text-fc-accent">Coaches</span></h1>
+            <p class="text-xl md:text-2xl text-fc-white/90 max-w-3xl mx-auto leading-relaxed">
+                Learn from Olympic-level coaches with decades of experience in competitive fencing.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Coaches Grid -->
+<section class="py-20 bg-fc-surface">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Coach 1 -->
+            <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 cursor-pointer transform hover:-translate-y-2" onclick="openCoachModal('coach1')">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Coach Smith" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold mb-2 text-fc-primary">Coach Smith</h3>
+                    <p class="text-fc-accent mb-4 text-lg font-semibold">Foil Specialist</p>
+                    <p class="text-fc-text mb-6 leading-relaxed">Olympic coach with 20+ years of experience training national champions.</p>
+                    <div class="flex items-center text-fc-accent">
+                        <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                        <span class="font-semibold">View Profile</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach 2 -->
+            <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 cursor-pointer transform hover:-translate-y-2" onclick="openCoachModal('coach2')">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Coach Johnson" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold mb-2 text-fc-primary">Coach Johnson</h3>
+                    <p class="text-fc-accent mb-4 text-lg font-semibold">Epee Specialist</p>
+                    <p class="text-fc-text mb-6 leading-relaxed">Former national team member and world championship medalist.</p>
+                    <div class="flex items-center text-fc-accent">
+                        <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                        <span class="font-semibold">View Profile</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach 3 -->
+            <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 cursor-pointer transform hover:-translate-y-2" onclick="openCoachModal('coach3')">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b15a130b?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Coach Williams" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold mb-2 text-fc-primary">Coach Williams</h3>
+                    <p class="text-fc-accent mb-4 text-lg font-semibold">Sabre Specialist</p>
+                    <p class="text-fc-text mb-6 leading-relaxed">International competitor with expertise in youth development.</p>
+                    <div class="flex items-center text-fc-accent">
+                        <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                        <span class="font-semibold">View Profile</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach 4 -->
+            <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 cursor-pointer transform hover:-translate-y-2" onclick="openCoachModal('coach4')">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Coach Davis" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold mb-2 text-fc-primary">Coach Davis</h3>
+                    <p class="text-fc-accent mb-4 text-lg font-semibold">Foil & Epee Coach</p>
+                    <p class="text-fc-text mb-6 leading-relaxed">Specializes in beginner and intermediate training programs.</p>
+                    <div class="flex items-center text-fc-accent">
+                        <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                        <span class="font-semibold">View Profile</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach 5 -->
+            <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 cursor-pointer transform hover:-translate-y-2" onclick="openCoachModal('coach5')">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Coach Martinez" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold mb-2 text-fc-primary">Coach Martinez</h3>
+                    <p class="text-fc-accent mb-4 text-lg font-semibold">Youth Program Director</p>
+                    <p class="text-fc-text mb-6 leading-relaxed">Expert in developing young talent and school programs.</p>
+                    <div class="flex items-center text-fc-accent">
+                        <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                        <span class="font-semibold">View Profile</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach 6 -->
+            <div class="bg-fc-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500 cursor-pointer transform hover:-translate-y-2" onclick="openCoachModal('coach6')">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Coach Thompson" class="w-full h-80 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-poppins font-bold mb-2 text-fc-primary">Coach Thompson</h3>
+                    <p class="text-fc-accent mb-4 text-lg font-semibold">Strength & Conditioning</p>
+                    <p class="text-fc-text mb-6 leading-relaxed">Specializes in physical training and injury prevention.</p>
+                    <div class="flex items-center text-fc-accent">
+                        <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                        <span class="font-semibold">View Profile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-fc-accent to-yellow-400">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-poppins font-bold text-fc-primary mb-6">Train with Champions</h2>
+        <p class="text-xl md:text-2xl text-fc-primary/80 mb-12 max-w-3xl mx-auto">Ready to take your fencing to the next level? Book a lesson with our world-class coaches.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="{% url 'contact' %}" class="bg-fc-primary text-fc-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-secondary transition duration-300">
+                Book a Lesson
+            </a>
+            <a href="{% url 'programs' %}" class="border-2 border-fc-primary text-fc-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-fc-primary hover:text-fc-white transition duration-300">
+                View Programs
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Coach Modal -->
+<div id="coachModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-fc-white rounded-2xl max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+        <!-- Modal Content -->
+        <div class="p-8 relative">
+            <!-- Close Button -->
+            <button onclick="closeCoachModal()" class="absolute top-4 right-4 text-fc-text hover:text-fc-primary p-2">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <!-- Coach 1 Modal -->
+            <div id="coach1" class="coach-modal-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Coach Smith" class="w-full h-96 object-cover rounded-2xl">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-poppins font-bold mb-4 text-fc-primary">Coach Smith</h2>
+                        <p class="text-fc-accent text-xl mb-8 font-semibold">Foil Specialist</p>
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-poppins font-bold mb-4 text-fc-primary">Experience</h3>
+                                <p class="text-fc-text leading-relaxed">20+ years coaching experience, including Olympic and World Championship teams. Former national champion and international competitor.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-bold mb-4 text-fc-primary">Achievements</h3>
+                                <ul class="list-disc list-inside text-fc-text space-y-2">
+                                    <li>Olympic Coach (2016, 2020)</li>
+                                    <li>World Championship Medalist</li>
+                                    <li>National Coach of the Year (2018)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-bold mb-4 text-fc-primary">Specialties</h3>
+                                <ul class="list-disc list-inside text-fc-text space-y-2">
+                                    <li>Advanced Foil Technique</li>
+                                    <li>Competition Strategy</li>
+                                    <li>Mental Preparation</li>
+                                </ul>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-fc-accent hover:text-fc-primary transition">
+                                    <i data-lucide="youtube" class="w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="text-fc-accent hover:text-fc-primary transition">
+                                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                                </a>
+                                <a href="#" class="text-fc-accent hover:text-fc-primary transition">
+                                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add placeholder modals for other coaches -->
+            <div id="coach2" class="coach-modal-content hidden">
+                <div class="text-center py-12">
+                    <h2 class="text-3xl font-poppins font-bold mb-4 text-fc-primary">Coach Johnson</h2>
+                    <p class="text-fc-accent text-xl mb-6">Epee Specialist</p>
+                    <p class="text-fc-text">Detailed profile coming soon...</p>
+                </div>
+            </div>
+
+            <div id="coach3" class="coach-modal-content hidden">
+                <div class="text-center py-12">
+                    <h2 class="text-3xl font-poppins font-bold mb-4 text-fc-primary">Coach Williams</h2>
+                    <p class="text-fc-accent text-xl mb-6">Sabre Specialist</p>
+                    <p class="text-fc-text">Detailed profile coming soon...</p>
+                </div>
+            </div>
+
+            <div id="coach4" class="coach-modal-content hidden">
+                <div class="text-center py-12">
+                    <h2 class="text-3xl font-poppins font-bold mb-4 text-fc-primary">Coach Davis</h2>
+                    <p class="text-fc-accent text-xl mb-6">Foil & Epee Coach</p>
+                    <p class="text-fc-text">Detailed profile coming soon...</p>
+                </div>
+            </div>
+
+            <div id="coach5" class="coach-modal-content hidden">
+                <div class="text-center py-12">
+                    <h2 class="text-3xl font-poppins font-bold mb-4 text-fc-primary">Coach Martinez</h2>
+                    <p class="text-fc-accent text-xl mb-6">Youth Program Director</p>
+                    <p class="text-fc-text">Detailed profile coming soon...</p>
+                </div>
+            </div>
+
+            <div id="coach6" class="coach-modal-content hidden">
+                <div class="text-center py-12">
+                    <h2 class="text-3xl font-poppins font-bold mb-4 text-fc-primary">Coach Thompson</h2>
+                    <p class="text-fc-accent text-xl mb-6">Strength & Conditioning</p>
+                    <p class="text-fc-text">Detailed profile coming soon...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Modal functionality
+    function openCoachModal(coachId) {
+        const modal = document.getElementById('coachModal');
+        const coachContent = document.getElementById(coachId);
+        
+        // Hide all coach content
+        document.querySelectorAll('.coach-modal-content').forEach(content => {
+            content.classList.add('hidden');
+        });
+        
+        // Show selected coach content
+        coachContent.classList.remove('hidden');
+        
+        // Show modal
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeCoachModal() {
+        const modal = document.getElementById('coachModal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Close modal when clicking outside
+    document.getElementById('coachModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeCoachModal();
+        }
+    });
+    
+    // Close modal with escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeCoachModal();
+        }
+    });
+</script>
+{% endblock %} 
